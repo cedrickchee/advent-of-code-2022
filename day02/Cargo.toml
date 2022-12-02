@@ -1,0 +1,18 @@
+[package]
+name = "day02"
+version = "0.0.0"
+edition = "2021"
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+
+[dependencies]
+aoc-shared = { path = "../shared" }
+
+[dev-dependencies]
+criterion = "0.4"
+
+[[bench]]
+name = "benchmark"
+harness = false
